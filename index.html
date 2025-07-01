@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portefólio-Web</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- script
+	================================================== -->
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navigation-bar" tabindex="0">
+
+
+    <div class=" offcanvas-btn text-end m-3">
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"><iconify-icon icon="ci:hamburger-lg"
+                style="font-size: 30px;"></iconify-icon></button>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <header class="hero position-fixed">
+                <div class="container hero-container text-center align-content-between">
+
+                    <div>
+                        <img src="images/carlbrown.png" class="hero-img mb-4 rounded-circle" alt="Bootstrap Themes"
+                            width="140" height="140" loading="lazy">
+
+
+                        <h2 class="fw-bold">Ercílio D'Graça</h2>
+                        <p>Designer gráfico com experiência em criação de identidades visuais, materiais promocionais e design digital. Focado em soluções criativas e eficazes para fortalecer marcas e comunicar ideias.</p>
+                        <div class="social-icon my-2">
+                            <p>
+                                <a class="social-link mx-3 active" href="#"> <iconify-icon
+                                        icon="icomoon-free:facebook"></iconify-icon> </a>
+                                <a class="social-link mx-3 " href="#"> <iconify-icon
+                                        icon="icomoon-free:instagram"></iconify-icon> </a>
+                                <a class="social-link mx-3 " href="#"> <iconify-icon
+                                        icon="icomoon-free:twitter"></iconify-icon> </a>
+                                <a class="social-link mx-3 " href="#"> <iconify-icon
+                                        icon="icomoon-free:youtube"></iconify-icon> </a>
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <section id="navigation-bar" class="navigation position-fixed ">
+
+
+                <ul class="nav nav-pills text-center align-items-center mt-5 ms-xl-5 ms-3 ">
+                    <li>
+                        <a href="#home" class="nav-link active rounded-0" aria-current="page" data-bs-toggle="tooltip"
+                            data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
+                            <iconify-icon icon="ic:round-home"></iconify-icon><br>
+                            <p>Home</p>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                            aria-label="Dashboard" data-bs-original-title="Dashboard">
+                            <iconify-icon icon="ic:round-person"></iconify-icon>
+                            <p>About</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#resume" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                            aria-label="Orders" data-bs-original-title="Orders">
+                            <iconify-icon icon="ic:round-school"></iconify-icon>
+                            <p>Skills</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="nav-link rounded-0" data-bs-toggle="tooltip"
+                            data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
+                            <iconify-icon icon="ic:round-business-center"></iconify-icon>
+                            <p>Projects</p>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#contact" class="nav-link rounded-0" data-bs-toggle="tooltip" data-bs-placement="right"
+                            aria-label="Customers" data-bs-original-title="Customers">
+                            <iconify-icon icon="ic:round-phone"></iconify-icon>
+                            <p>Contact</p>
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+
+            <div class="col-xl-6 offset-xl-2">
+                <div class="container content-container">
+
+                    <section id="home" class="mt-0">
+
+                        <div class=" py-lg-4 my-lg-4 text-center">
+                            <h1 class="fw-bold">Olá,Ercílio aqui</h1>
+                            <div class="col-lg-10 mx-auto">
+                                <p class="lead-paragraph mb-4">Sou designer gráfico, ilustrador e webdesigner,
+                                criando
+                            identidades visuais incríveis e eficazes para empresas.</p>
+                                <div class="gap-2 d-sm-flex justify-content-sm-center">
+                                    <a href="#contact" class="btn btn-primary btn-lg mt-3">CONTACTE-ME</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section id="about" class="mt-0">
+
+                        <div class="py-4 my-4 ">
+                            <h1 class="fw-bold mt-5">Sobre Mim</h1>
+                            <p class="lead-paragraph my-4">Sou designer gráfico, ilustrador e webdesigner com sólida experiência no desenvolvimento de identidades visuais, materiais gráficos e projetos digitais. Trabalho com criação de logotipos, branding, design para mídias sociais, websites e ilustrações personalizadas, sempre buscando soluções criativas e alinhadas aos objetivos de cada cliente. Tenho paixão por transformar ideias em imagens que comunicam com clareza e emoção, ajudando empresas e empreendedores a se destacarem no mercado e fortalecerem sua presença visual. Estou sempre em busca de novas tendências e tecnologias para oferecer resultados modernos e eficazes.</p>
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                        <div class=" py-4 my-4 ">
+                            <h2 class="fw-bold">Informações pessoais</h2>
+
+                            <ul class="list-unstyled">
+                                <li><b>Idade:</b> 36 </li>
+                                <li><b>Residência:</b> Maputo </li>
+                                <li><b>Endereço:</b> Khongolote Q:82 Casa: 534</li>
+                                <li><b>E-mail:</b> mail: ercilio@gmail.com</li>
+                                <li><b>Telefone:</b> +2345 344 678 563</li>
+                            </ul>
+
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                        <div class=" py-4 my-4 ">
+                            <h2 class="fw-bold pt-4 pb-5">Serviços</h2>
+                            <div class="row row-cols-1 row-cols-sm-2 ">
+                                <div class="col d-flex align-items-start pb-5">
+                                    <img src="images/browser page account.png" alt="image">
+                                    <div>
+                                        <h4 class="fw-bold mb-0">Web Design</h4>
+                                        <p class="mb-1">Desenvolvimento de websites modernos e responsivos.
+                                        </p>
+                                    
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start pb-5">
+                                    <img src="images/shipment upload.png" alt="image">
+                                    <div>
+                                        <h4 class="fw-bold mb-0">Design de embalagem</h4>
+                                        <p class="mb-1">Criação de embalagens criativas e funcionais que valorizam o produto e atraem o consumidor.
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start pb-5">
+                                    <img src="images/shirt plain.png" alt="image">
+                                    <div>
+                                        <h4 class="fw-bold mb-0">Design de estampa de camiseta</h4>
+                                        <p class="mb-1">Criação de estampas originais e estilosas para camisetas que destacam a personalidade da marca."
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start pb-5">
+                                    <img src="images/video game logo companion cube.png" alt="image">
+                                    <div>
+                                        <h4 class="fw-bold mb-0">Design de marca</h4>
+                                        <p class="mb-1">Criação de identidades visuais únicas e memoráveis que fortalecem a presença da marca.
+                                        </p>
+                           
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                        <hr class="mid-break my-2">
+
+
+
+                    </section>
+
+                    <section id="resume">
+                        
+
+                        <hr class="mid-break my-2">
+
+
+                        <div class="py-4 my-4 ">
+                            <h2 class="fw-bold pb-4">Habilidades</h2>
+
+
+                            <div id="progressbar-tooltip-id" class="progressbar-tooltip">
+
+                                <h4>Adobe Photoshop</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true"
+                                    data-value="100" data-title=""></div>
+                                <h4>Adobe Illustration</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true"
+                                    data-value="98" data-title=""></div>
+                                <h4>Adobe Indesign</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true"
+                                    data-value="90" data-title=""></div>
+                                <h4>Adobe Premiere Pro</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true"
+                                    data-value="85" data-title=""></div>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="py-4 my-4 ">
+                            <h2 class="fw-bold pb-4">Idiomas</h2>
+
+
+                            <div id="progressbar-tooltip-id" class="progressbar-tooltip">
+
+                                <h4>Português</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true"
+                                    data-value="100" data-title=""></div>
+                                <h4>Inglês</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true"
+                                    data-value="80" data-title=""></div>
+                                <h4>Francês</h4>
+                                <div class="ab-progress progress-tooltip" data-progress data-tooltip="true"
+                                    data-value="87" data-title=""></div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                        <div class="py-4 my-4 ">
+                            <h2 class="fw-bold pb-4">Experiência</h2>
+
+
+                            <div class="row justify-content-start" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info ">
+                                        <p class="meta-date">2019 - 2021 <img src="images/Ellipse 7.png" alt="image">
+                                            <a class="open-description">BCI </a> </p>
+                                        <h3 class="info-title">Web Designer</h3>
+                                        <p>Atuei como Web Designer no Banco BCI, criando interfaces digitais responsivas e modernas. Desenvolvi layouts focados na experiência do usuário para melhorar a navegação e fortalecer a presença online do banco.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row justify-content-end" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info">
+                                        <p class="meta-date">2021 - Atual <img src="images/Ellipse 7.png" alt="image"> <a
+                                                class="open-description">TV Miramar
+                                                </a> </p>
+                                        <h3 class="info-title">Senior Designer</h3>
+                                        <p>Senior Designer na TV Miramar, responsável por criar identidades visuais, materiais promocionais e conteúdos digitais para fortalecer a marca e engajar o público.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                        <div class="py-4 my-4 ">
+                            <h2 class="fw-bold pb-4">Educação</h2>
+
+                            <div class="row justify-content-start" data-aos="fade-up">
+                                <div class="col-7">
+                                    <div class="data-info ">
+                                        <p class="meta-date">2011 - 2014 <img src="images/Ellipse 7.png" alt="image">
+                                            <a class="open-description">Universidade Universidede Eduardo Mondlhane</a>
+                                        </p>
+                                        <h3 class="info-title">Design</h3>
+                                        <p>Formação em Design pela Universidade Universidede Eduardo Mondlhane, com ênfase em design gráfico, comunicação visual e web design. Capacitado em criação digital, desenvolvimento de interfaces e projetos criativos para ambientes online e offline.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                      
+                        </div>
+
+                    </section>
+
+                    <section id="portfolio">
+
+
+                        <div class="py-4 my-4 ">
+                            <h1 class="fw-bold mt-5">Projects</h1>
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+
+                        <div class="py-4 my-4 ">
+
+                            <div class="mb-5">
+                                <p>
+                                    <button class="filter-button active" data-filter="*">All</button>
+                                    <button class="filter-button" data-filter=".branding">Branding</button>
+                                    <button class="filter-button" data-filter=".tshirt">T-shirt</button>
+                                    <button class="filter-button" data-filter=".package">Package</button>
+                                    <button class="filter-button" data-filter=".website">Website</button>
+                                    <button class="filter-button" data-filter=".poster">Poster</button>
+                                </p>
+                            </div>
+
+
+                            <div class="isotope-container">
+                                <div class="item website col-md-4">
+
+
+                                    <a href="images/Rectangle 49.png" title="Website" class="image-link">
+
+                                        <img class="portfolio-img" src="images/Rectangle 49.png" alt="image">
+                                        <div class="description">
+                                            <h4>Website</h4>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+
+                                <div class="item branding col-md-4">
+                                    <a href="images/Rectangle 52.png" title="Boxed Water" class="image-link">
+                                        <img class="portfolio-img" src="images/Rectangle 52.png" alt="image">
+                                        <div class="description">
+                                            <h4>Verve Coffee</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item tshirt col-md-4">
+                                    <a href="images/Rectangle 51.png" title="Boxed Water" class="image-link">
+                                        <img class="portfolio-img" src="images/Rectangle 51.png" alt="image">
+                                        <div class="description">
+                                            <h4>Childern T-shirt</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item package col-md-4">
+                                    <a href="images/Rectangle 50.png" title="Boxed Water" class="image-link">
+                                        <img class="portfolio-img" src="images/Rectangle 50.png" alt="image">
+                                        <div class="description">
+                                            <h4>Tote Bag</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item website col-md-4">
+                                    <a href="images/Rectangle 54.png" title="Boxed Water" class="image-link">
+                                        <img class="portfolio-img" src="images/Rectangle 54.png" alt="image">
+                                        <div class="description">
+                                            <h4>Box Packaging</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item poster col-md-4">
+                                    <a href="images/Rectangle 53.png" title="Boxed Water" class="image-link">
+                                        <img class="portfolio-img" src="images/Rectangle 53.png" alt="image">
+                                        <div class="description">
+                                            <h4>Coco Oil</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item poster col-md-4">
+                                    <a href="images/moda.png" title="Boxed Water" class="image-link">
+                                        <img class="portfolio-img" src="images/moda.png" alt="image">
+                                        <div class="description">
+                                            <h4>Dia da Criança</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="item poster col-md-4">
+                                    <a href="images/f2.png" title="Boxed Water" class="image-link">
+                                        <img class="portfolio-img" src="images/f2.png" alt="image">
+                                        <div class="description">
+                                            <h4>Dia da Mulher</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item tshirt col-md-4">
+                                    <a href="images/Rectangle 55.png" title="Boxed Water" class="image-link">
+                                        <img class="portfolio-img" src="images/Rectangle 55.png" alt="image">
+                                        <div class="description">
+                                            <h4>Graphic T-shirt</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="item branding col-md-4">
+                                    <a href="images/Rectangle 57.png" title="Boxed Water" class="image-link">
+                                        <img class="portfolio-img" src="images/Rectangle 57.png" alt="image">
+                                        <div class="description">
+                                            <h4>Paper Cup</h4>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <a href="images/video.mp4" title="Boxed Water" class="image-link"></a>
+                    <video class="portfolio-img" src="images/video.mp4" autoplay muted loop playsinline style="width: 100%; height: 300px; object-fit: cover;">
+                                    Seu navegador não suporta a tag de vídeo.
+                                </video>
+
+                    <section id="contact">
+
+                        <div class="py-4 my-4 ">
+                            <h1 class="fw-bold mt-5">Contato</h1>
+                            <p>Quer conversar sobre o projeto? Sinta-se à vontade para entrar em contato conosco.</p>
+                        </div>
+
+
+                        <hr class="mid-break my-2">
+
+                        <div class="py-4 my-4 ">
+
+                            <div class="row justify-content-around">
+                                <div class="col-md-4 contact-list">
+                                    <p class="contact-paragraph"><iconify-icon icon="ic:outline-phone"></iconify-icon>
+                                        +258 845635425</p>
+                                </div>
+                                <div class="col-md-4 contact-list">
+                                    <p class="contact-paragraph"><iconify-icon icon="ic:outline-email"></iconify-icon>
+                                        ercilio@gmail.com </p>
+                                </div>
+                                <div class="col-md-4 contact-list">
+                                    <p class="contact-paragraph"> <iconify-icon
+                                            icon="ic:outline-location-on"></iconify-icon> Maputo, Matola</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                        <div class="py-4 my-4 ">
+
+                            <h2 class="fw-bold pb-4">Entre em contato</h2>
+
+                            <form name="contactform" action="contact.php" method="post"
+                                class="form-group contact-form mt-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" minlength="2" name="name" placeholder="Nome*"
+                                            class="form-control" required="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" name="email" placeholder="E-mail*" class="form-control"
+                                            required="">
+                                    </div>
+                                    <BR><div class="col-md-6">
+                                        <input type="text" minlength="2" name="Assunto" placeholder="Assunto*"
+                                            class="form-control" required="">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+
+                                        <textarea class="form-control mt-4 mb-4" name="message" placeholder="Messaguem"
+                                            style="height: 150px;" required=""></textarea>
+
+
+                                        <button type="submit" name="submit" class="btn btn-primary btn-lg ">ENVIAR
+                                            </button>
+
+
+
+
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <hr class="mid-break my-2">
+
+                        <div class="py-4 my-4 ">
+
+                            <h2 class="fw-bold pb-4">Google Map</h2>
+                            <div class="mapouter">
+                                <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas"
+                                        src="https://maps.google.com/maps?q=Maputo,%20Mozambique&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                        href="https://getasearch.com/fmovies"></a><br>
+                                    <style>
+                                        .mapouter {
+                                            position: relative;
+                                            text-align: right;
+                                            height: 500px;
+                                            width: 100%;
+                                        }
+                                    </style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                                    <style>
+                                        .gmap_canvas {
+                                            overflow: hidden;
+                                            background: none !important;
+                                            height: 500px;
+                                            width: 100%;
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+
+                    </section>
+
+                </div>
+            </div>
+
+            <div class="hero-sidebar col-xl-3 offset-xl-1">
+                <header class="hero position-fixed">
+                    <div class="container hero-container text-center my-4 pt-3 align-content-between">
+
+                        <div>
+                            <img src="images/carlbrown.png" class="hero-img mb-4 rounded-circle" alt="Bootstrap Themes"
+                                width="140" height="140" loading="lazy">
+
+
+                            <h2 class="fw-bold mt-3">Ercílio D'Graça</h2>
+                            <p>Concebendo experiências visuais únicas que comunicam e inspiram.</p>
+                            <div class="social-icon my-3">
+                                <p>
+                                    <a class="social-link mx-3 active" href="https://www.facebook.com/"> <iconify-icon
+                                            icon="icomoon-free:facebook"></iconify-icon> </a>
+                                    <a class="social-link mx-3 " href="https://www.instagram.com/"> <iconify-icon
+                                            icon="icomoon-free:instagram"></iconify-icon> </a>
+                                    <a class="social-link mx-3 " href="https://linkedin.com/"> <iconify-icon
+                                            icon="icomoon-free:linkedin"></iconify-icon> </a>
+                                </p>
+
+                            </div>
+
+                            
+
+                        </div>
+
+
+                        <div class="mb-5">
+                            <p class="copyright ">© Copyright 2025 <a href="">
+                        </div>
+
+
+                    </div>
+                </header>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+</body>
+
+</html>
